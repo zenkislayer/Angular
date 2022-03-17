@@ -1,12 +1,19 @@
 .btn{
-    color:aliceblue
+    color:aliceblue;
+    font-size: larger;
 }
 
 .somos{
-    color: azure
+    color: azure;
+    text-align: justify;
 }
 
 .negrilla{
     font-weight: bold;
     color: azure;
+}
+
+.cajita{
+    font-size: 2vw;
+    text-align: justify;
 }

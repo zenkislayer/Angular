@@ -11,116 +11,164 @@
 <body class="p-3 mb-2 bg-secondary ">
 
     <!-- Barra de navegacion -->
-       <nav class="navbar navbar-dark rounded" style="background-color: grey; text-emphasis-color: white;" >
-        <div class="container-fluid">
-          <a class="navbar-brand " href="index.html">
-            <img src="css/angubar.png" alt="" width="200" height="100">
-          </a>
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" >¿Que es Angular?</button>
-            <div class="dropdown-menu p-4 text-muted" style="max-width: 300px;">
-              <p>
-                Es un framework de codigo abierto creado por Google el 15 de septiembre del 2016, que se utiliza para mantener aplicaciones web de una sola pagina.
-              </p>
-              <p class="mb-0">
-                Un framework es un entorno de trabajo o marco de trabajo estandarizado de conceptos, practicas y criterios.
-              </p>
+
+<nav class="navbar navbar-dark rounded fixed-top" style="background-color: #808080; text-emphasis-color: #ffffff;" >
+  <div class="container">
+    <a class="navbar-brand " href="index.html">
+      <img class="angular_logo" src="images/angular.png" alt="Angular">
+    </a>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" >¿Qué es un framework?</button>
+      <div class="dropdown-menu p-4 text-muted" style="max-width: 300px;">
+        <p class="mb-0">
+          Un framework es un entorno de trabajo o marco de trabajo estandarizado de conceptos, practicas y criterios.
+        </p>
+      </div>
+      
+      <a type="button" class="btn" href="pagina2.html">Ejemplos con Angular</a>
+    </div>
+  </div>
+</nav>
+<hr>
+<!-- Fin de barra de navegacion -->
+
+<!-- Inicio del cuerpo de la pagina -->
+<main>
+  <div class="padre_descripcion container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="descripcion">
+          <div class="p-3"></div>
+            <h2 class="negrilla">¿Qué es Angular?</h2>
+          <div class="p-2"></div>
+          <p class="descripción__uno">Es un framework de codigo abierto creado por Google el 15 de 
+            septiembre del 2016, que se utiliza para mantener aplicaciones web de una sola pagina.
+            Permite codificar en cualquier tipo de plataforma web, web mobil, nativo para mobiles 
+            o nativo para escritorio.</p>
+        </div>
+        <div class="angularjs">
+          <p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">¿AngularJS?</a>
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body bg-secondary">
+                  <p> Hay que tener en cuenta que Angular es la evolución de AngularJS,
+                  aunque es incompatible con su predecesor. Es decir, Angular y AngularJS no son lo mismo.</p>
+                </div>
+              </div>
             </div>
-            
-            <a type="button" class="btn" href="pagina2.html">pagina 2</a>
-            <a type="button" class="btn" href="pagina3.html">pagina 3</a>
           </div>
         </div>
-      </nav>
-      <hr>
-    <!-- Fin de barra de navegacion -->
-
-    <!-- Inicio del cuerpo de la pagina -->
-    <div class="row">
-      <div class="col">
-        <div class="cajita p-5">
-          <div class="p-3"></div>
-          <p class="negrilla">¿Que podemos esperar de Angular?</p>
-          <div class="p-2"></div>
-          <p class="somos">Angular es presentada como una herramienta de desarrollo dirigida a un publico moderno que permite codificar en cualquier tipo de plataforma que se necesite sea web, web mobil, nativo para mobiles o nativo para escritorio</p>
-          <p class="somos">Debido a la plataforma que esta la misma maneja Angular permite escalar los proyectos desde los mas pequeños proyectos hasta llevarlos a una escala a nivel industrial.</p>
-        </div>
       </div>
-      <div class="col">
-        <img class="rounded img-fluid" src="css/angular logo.png" alt="logoangular">
+      <div class="col-lg-5 offset-1 mt-5">
+        <img class="angular_grande rounded img" src="images/angular_logo.png" alt="logoangular">
       </div>
     </div>
-    <div class="p-3"></div>
+  </div>
+  <div class="container productividad">
     <div class="row">
-      <div class="col">
-        <div class="p-5"></div>
-        <img class="rounded img-fluid" src="css/codi1.png" alt="codigo1">
+      <div class="col-lg-6">
+        <img src="images/img_productividad-01.png" alt="">
       </div>
-      <div class="col">
-        <div class="cajita p-5">
-          <p class="somos">Los componentes son los bloques de construcción que componen una aplicación. Un componente incluye una clase de TypeScript con un decorador @Component(), una plantilla HTML y estilos. El decorador @Component() especifica la siguiente información específica de Angular:</p>
-          <p class="somos"> Un selector de CSS que define cómo se usa el componente en una plantilla. Los elementos HTML de su plantilla que coincidan con este selector se convierten en instancias del componente.</p>
-          <p class="somos">Una plantilla HTML que le indica a Angular cómo representar el componente.</p>
-          <p class="somos">Un conjunto opcional de estilos CSS que definen la apariencia de los elementos HTML de la plantilla.</p>
+      <div class="col-lg-6">
+        <div class="productividad_descripcion">
+          <h2>Productividad</h2>
+          <ul class="mt-5">
+            <li>Angular es un framework con uso a <b>largo plazo</b>, lo que hace que no se tenga 
+              que mirar a una nueva tecnología en un futuro cercano.</li><br>
+            <li>Permite crear rápidamente vistas de interfaz de usuario con una sintaxis  
+              de plantilla simple y potente.</li><br>
+            <li>Los editores e IDEs obtienen sugerencias de código inteligente, detección 
+              de errores y comentarios.</li><br>
+            <li>Las herramientas de línea de comandos permiten empezar a desarrollar 
+              rápidamente, añadir componentes y realizar test, así como previsualizar 
+              de forma instantánea la aplicación.</li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- Donde aprender? -->
-    <p class="h2 negrilla text-center">¿Quieres aprender como comenzar a trabajar en Angular?</p>
-    <div class="p-3"></div>
-
-      <div class="row">
-        <div class="col">
-          <p class="cajita">Uneté a la comunidad mas grande a travez de nuestro Discord</p>
-          <a href="https://discord.gg/angular" target="_blank">
-            <img src="css/discord.png" class="w-50 img-fluid mx-auto" > 
-          </a>                   
-        </div>
-        <div class="col bg-opacity-50 bg-secondary">
-          <p class="cajita">Uneté a la comunidad mas grande a travez de nuestro Stackoverflow</p>
-          <a href="https://stackoverflow.com/questions/tagged/angular" target="_blank">
-            <img src="css/stack.png" class="w-50 rounded img-fluid" >
-          </a>            
-        </div>
-        <div class="col">
-          <p class="cajita">Uneté a la comunidad mas grande a travez de nuestro Gitter</p>
-          <a href="https://gitter.im/angular/angular" target="_blank">
-            <img src="css/gitter.png" class="w-50 img-fluid" >
-          </a>            
-        </div>
+  </div>
+<div class="container rendimiento">
+    <did class="row align-items-center">
+      <div class="col-6">
+        <h2 class="mb-5">Rendimiento y Velocidad</h2>
+        <ul>
+          <li>
+            <p>Ofrece la capacidad de crear una single page application, así los cambios son 
+              instantáneos, y hace que las webs sean más rápidas dado que gracias al diseño 
+              basado en componentes reutilizables no hay que estar continuamente recargando la 
+              página, solo hacemos aparecer y desaparecer los componentes que necesitamos para 
+              cada una de las vistas que componen la aplicación</p>
+          </li>
+          <li>
+            <p>Otra característica que hace que Angular sea más rápido en su ejecución en el 
+              navegador es que genera código optimizado para las máquinas virtuales de javascript.</p>
+          </li>
+        </ul>
       </div>
-    <!-- fin donde aprender -->
-
+      <div class="col-6">
+        <img class="rendimiento_img mt-5" src="images/img_velocidad-01.png" alt="Rendimiento y velocidad">
+      </div>
+    </did>
+  </div>
+  <div class="container testing">
+    <div class="row">
+      <div class="col-12 text-center testing_titulo">
+        <h2>Testing y accesibilidad</h2>
+      </div>
+    </div>
+    <div class="row align-items-center hijo_testing">
+      <div class="col-4">
+        <ul>
+          <li><p>Posee características para crear aplicaciones accesibles con los 
+            componentes disponibles para ARIA</p></li>
+        </ul>
+      </div>
+      <div class="col-4">
+        <img class="testing_img" src="images/testing-01-01.png" alt="">
+      </div>
+      <div class="col-4">
+        <ul>
+          <li>
+            <p>Previene la detección de errores gracias a su sistema de testing unitario, 
+              integración y e2e, con lo que se puede blindar la aplicación para evitar 
+              fallos en cualquier despliegue.</</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>    
     <!-- Fin del cuerpo de la pagina -->
 
-     <!-- Pie de pagina -->
-     <hr>
-     <div class="p-2"></div>
-     <p class="negrilla text-center h2">¿Quienes somos?</p>
-     <div class="p-2"></div>
-     <p class="somos w-75 text-center mx-auto">Gracias por visitar nuestra pagina, aqui te explicaremos un poco sobre Angular, los creadores de este espacio somos nosotros, conocenos!!</p>
-     <div class="p-2"></div>
-     <div class="row">
-       <div class="col">
-         <div class="col w-25 mx-auto">
-           <img class="img-fluid" src="css/who.png" alt="chlogo">
-           <p class="somos">Kelly Saldaña</p>
-         </div>
-       </div>
-       <div class="col">
-        <div class="col w-25 mx-auto">
-          <img class="img-fluid rounded" src="css/who.png" alt="chlogo">
-          <p class="somos">Leyder Rodriguez</p>
+    <!-- Footer -->
+<footer class="container-fluid">
+  <div class="footer">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-4">
+          <h5>Kelly Saldaña</h5>
+        </div>
+        <div class="col-4">
+          <h5>Leyder Rodriguez</h5>
+        </div>
+        <div class="col-4">
+          <h5>Cristhian Herrera</h5>
         </div>
       </div>
-      <div class="col">
-        <div class="col w-25 mx-auto">
-          <img class="img-fluid rounded" src="css/chmonogram.jpg" alt="chlogo">
-          <p class="somos">Cristhian Herrera</p>
-        </div>
+    </div>
+  </div>
+  <div class="footer_logo">
+    <div class="row">
+      <div class="col-12 logo">
+        <img src="images/angular.png" alt="">
       </div>
-     </div>
-     <!-- Fin de pie de pagina -->
+    </div>
+  </div>
+</footer>
+    <!-- Footer -->
 
     <script src="js/bootstrap.min.js"></script>
 </body>

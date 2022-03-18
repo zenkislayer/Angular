@@ -6,65 +6,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo sobre Angular</title>
+    <title>Ejemplos con Angular</title>
 </head>
 <body class="p-3 mb-2 bg-secondary ">
 
     <!-- Barra de navegacion -->
-       <nav class="navbar navbar-dark rounded" style="background-color: grey; text-emphasis-color: white;" >
-        <div class="container-fluid">
-          <a class="navbar-brand " href="index.html">
-            <img src="css/angubar.png" alt="" width="200" height="100">
-          </a>
-          <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" >¿Que es Angular?</button>
-            <div class="dropdown-menu p-4 text-muted" style="max-width: 300px;">
-              <p>
-                Es un framework de codigo abierto creado por Google el 15 de septiembre del 2016, que se utiliza para mantener aplicaciones web de una sola pagina.
-              </p>
-              <p class="mb-0">
-                Un framework es un entorno de trabajo o marco de trabajo estandarizado de conceptos, practicas y criterios.
-              </p>
-            </div>
-            
-            <a type="button" class="btn" href="pagina2.html">pagina 2</a>
-            <a type="button" class="btn" href="pagina3.html">pagina 3</a>
-          </div>
-        </div>
-      </nav>
-      <hr>
+<nav class="navbar navbar-dark rounded fixed-top" style="background-color: #808080; text-emphasis-color: #ffffff;" >
+  <div class="container">
+    <a class="navbar-brand " href="index.html">
+      <img class="angular_logo" src="images/angular.png" alt="Angular">
+    </a>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" >¿Qué es un framework?</button>
+      <div class="dropdown-menu p-4 text-muted" style="max-width: 300px;">
+        <p class="mb-0">
+          Un framework es un entorno de trabajo o marco de trabajo estandarizado de conceptos, practicas y criterios.
+        </p>
+      </div>
+      
+      <a type="button" class="btn" href="pagina2.html">Ejemplos con Angular</a>
+    </div>
+  </div>
+</nav>
+<hr>
     <!-- Fin de barra de navegacion -->
     
-    <!-- Inicio del cuerpo de la pagina -->
-    <p class="H5 text-center"> ESTAS TRABAJANDO EN LA PAGINA2 , RECUERDA BORRAR ESTO</p>
-
-    <!-- Fin del cuerpo de la pagina -->
-
-     <!-- Pie de pagina -->
-     <hr>
-     <div class="p-2"></div>
-     <p class="negrilla text-center h2">¿Quienes somos?</p>
-     <div class="p-3"></div>
-     <div class="row">
-       <div class="col">
-         <div class="col w-25 mx-auto">
-           <img class="img-fluid" src="css/who.png" alt="chlogo">
-           <p class="somos">Kelly Saldaña</p>
-         </div>
-       </div>
-       <div class="col">
-        <div class="col w-25 mx-auto">
-          <img class="img-fluid rounded" src="css/who.png" alt="chlogo">
-          <p class="somos">Leyder Rodriguez</p>
+<!-- Inicio del cuerpo de la pagina -->
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="images/img_cloud.jpg" class="card-img-top" alt="Google Cloud">
+        <div class="card-body">
+          <h5 class="card-title">Google Cloud</h5>
+          <p class="card-text">Google Cloud Blog <br> Desarrollado con Angular 5.2.2</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cloud">
+            Ver Imagen
+          </button>
         </div>
       </div>
-      <div class="col">
-        <div class="col w-25 mx-auto">
-          <img class="img-fluid rounded" src="css/chmonogram.jpg" alt="chlogo">
-          <p class="somos">Cristhian Herrera</p>
+    </div>
+    <div class="modal fade" id="cloud" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Google Cloud</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/img_cloud.jpg" class="card-img-top" alt="Google Cloud">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
         </div>
       </div>
-     </div>
+    </div>
+    <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="images/img_forbes.jpg" class="card-img-top" alt="Forbes">
+        <div class="card-body">
+          <h5 class="card-title">Forbes</h5>
+          <p class="card-text">forbes.com <br> Desarrollado con Angular 5.2.0</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#forbes">
+            Ver Imagen
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="forbes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Forbes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/img_forbes.jpg" class="card-img-top" alt="Forbes">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="images/img_microsoft.jpg" class="card-img-top" alt="Microsoft Office">
+        <div class="card-body">
+          <h5 class="card-title">Microsoft Office</h5>
+          <p class="card-text">Microsoft Office Home <br> Desarrollado con Angular 7.1.3</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#microsoft">
+            Ver Imagen
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="microsoft" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Microsoft Office</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/img_microsoft.jpg" class="card-img-top" alt="Microsoft Office">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="images/img_nba.jpg" class="card-img-top" alt="NBA">
+        <div class="card-body">
+          <h5 class="card-title">NBA</h5>
+          <p class="card-text">nba.com <br> Desarrollado con Angular 4.2.4</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nba">
+            Ver Imagen
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="nba" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">NBA</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="images/img_nba.jpg" class="card-img-top" alt="NBA">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card" style="width: 18rem;">
+        <img src="images/img_ryanair.jpg" class="card-img-top" alt="RYNAIR">
+        <div class="card-body">
+          <h5 class="card-title">RYNAIR</h5>
+          <p class="card-text">Ryanair Rooms <br> Desarrollado con Angular 4.4.6</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Ver Imagen
+          </button>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">RYNAIR</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="images/img_ryanair.jpg" class="card-img-top" alt="RYNAIR">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin del cuerpo de la pagina -->
+
+    <!-- Pie de pagina -->
+    <footer class="container-fluid">
+      <div class="footer">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-4">
+              <h5>Kelly Saldaña</h5>
+            </div>
+            <div class="col-4">
+              <h5>Leyder Rodriguez</h5>
+            </div>
+            <div class="col-4">
+              <h5>Cristhian Herrera</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_logo">
+        <div class="row">
+          <div class="col-12 logo">
+            <img src="images/angular.png" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
      <!-- Fin de pie de pagina -->
 
     <script src="js/bootstrap.min.js"></script>
